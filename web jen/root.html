@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Root Home - Web Technologies Lab</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f7ff;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .btn {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 15px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Technologies Lab Portal</h1>
+    <p>By ANTONIYA JENCY J - 27CSA</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Antoniyajency, a 2nd-year Computer Science Engineering student. This portal is part of my Web Technologies lab record, where I demonstrate my understanding of HTML, CSS, JavaScript, Servlets, JSP, XML, and more.</p>
+      
+      <h2>About the Lab</h2>
+      <p>This lab consists of 7 exercises, each focused on core web development concepts. The objective is to gain hands-on experience in creating web pages, working with styling, interactivity, server-side programming, and data presentation.</p>
+    </section>
+
+    <div class="button-grid">
+      <!-- <a href="index.html" class="btn">Go to Exercise Home</a> -->
+      <a href="index.html" class="btn">Exercise 1: Image Map</a>
+      <a href="exercise2.html" class="btn">Exercise 2: CSS Types</a>
+      <a href="exercise3.html" class="btn">Exercise 3: Form Validation</a>
+      <a href="exercise4.html" class="btn">Exercise 4: Apache Tomcat</a>
+      <a href="exercise5.html" class="btn">Exercise 5: Servlets</a>
+      <a href="exercise6.html" class="btn">Exercise 6: JSP + DB</a>
+      <a href="exercise7.html" class="btn">Exercise 7: XML & XSLT</a>
+    </div>
+  </main>
+
+</body>
+</html>
