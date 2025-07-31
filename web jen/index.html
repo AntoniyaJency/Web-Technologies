@@ -1,86 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>3D Homepage with Interactive Map</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Technologies Lab - Root Home</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      font-family: sans-serif;
+    /* Import Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    :root {
+      --text-color: #e0e0e0;
+      --accent: #4a90e2;
+      --card-bg: rgba(30, 30, 30, 0.85);
+      --border: rgba(255, 255, 255, 0.08);
     }
 
-    /* Fullscreen 3D animation background */
-    .background-3d {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    /* Fullscreen background */
+    #bg {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      z-index: -1;
       border: none;
-      z-index: -2;
     }
 
-    /* Image layer for map (invisible but clickable) */
-    .clickable-map {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      z-index: 1;
-      opacity: 0; /* Makes it invisible */
-      pointer-events: auto;
-    }
-
-    h1, h3 {
-      position: absolute;
-      width: 100%;
+    header {
       text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
       color: white;
-      z-index: 2;
-      text-shadow: 2px 2px 10px black;
     }
 
-    h1 {
-      top: 3%;
-      font-size: 60px;
-      letter-spacing: 4px;
+    header p {
+      font-size: 1rem;
+      color: #bbbbbb;
     }
 
-    h3 {
-      bottom: 5%;
-      font-size: 28px;
-      letter-spacing: 2px;
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
     }
 
-    @media (max-width: 768px) {
-      h1 { font-size: 40px; }
-      h3 { font-size: 20px; }
+    section {
+      background-color: var(--card-bg);
+      backdrop-filter: blur(10px);
+      padding: 25px 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      border: 1px solid var(--border);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: white;
+      padding: 16px;
+      height: 100px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.4;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
-  <h1>CAPSULINK</h1>
-  <h3>A DIGITAL TIME CAPSULE</h3>
 
-  <!-- 3D animation background -->
-  <iframe class="background-3d"
-    src="https://my.spline.design/timeliquid-xjqzZ5z3NkNA9MzJlDwtldz3/"
-    allowfullscreen
-    allow="autoplay; fullscreen">
-  </iframe>
+  <!-- Spline background -->
+  <iframe id="bg" src="https://my.spline.design/particlenebula-GCN6jWE7OPDIBXCm8BwoPeCF/" frameborder="0"></iframe>
 
-  <!-- Invisible image for mapping -->
-  <img src="hourglass.jpg" usemap="#map" alt="Map Layer" class="clickable-map" />
+  <header>
+    <h1>Web Technologies Laboratory</h1>
+    <p>Root Homepage | Antoniyajency J - 311123104013</p>
+  </header>
 
-  <!-- Define clickable areas -->
-  <map name="map">
-    <!-- Adjust coordinates to match the image -->
-    <area shape="poly" coords="295,58,678,766,680,55,291,770,556,413,414,418,292,218,67"
-      href="scene.html" alt="hourglass" />
-  </map>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am Antoniyajency J, a 3rd-year Computer Science and Engineering student. This portal serves as the root entry point to my Web Technologies Laboratory record, showcasing the exercises and web concepts I’ve implemented.
+      </p>
+    </section>
+
+    <section>
+      <h2>About the Laboratory</h2>
+      <p>
+        This lab emphasizes practical understanding of web development using HTML, CSS, DHTML, Servlets, JSP, XML, and more. It covers both client-side and server-side components across 7 structured exercises.
+      </p>
+    </section>
+
+    <section>
+      <h2>Exercise Navigation</h2>
+      <div class="button-grid">
+        
+        <a href="root.html" class="btn">Exercise 1: HTML Image Map</a>
+        <a href="exercise2.html" class="btn">Exercise 2: CSS Types</a>
+        <a href="exercise3.html" class="btn">Exercise 3: Form Validation (DHTML)</a>
+        <a href="exercise4.html" class="btn">Exercise 4: Apache Tomcat Setup</a>
+        <a href="exercise5.html" class="btn">Exercise 5: Java Servlets</a>
+        <a href="exercise6.html" class="btn">Exercise 6: JSP with Database</a>
+        <a href="exercise7.html" class="btn">Exercise 7: XML, Schema, XSLT</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Antoniyajency J | Department of CSE
+  </footer>
+
 </body>
 </html>
