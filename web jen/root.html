@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Root Home - Web Technologies Lab</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Technologies Lab - Root Home</title>
   <style>
-    body {
+    /* Import Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    :root {
+      --text-color: #e0e0e0;
+      --accent: #4a90e2;
+      --card-bg: rgba(30, 30, 30, 0.85);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f7ff;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    /* Fullscreen background */
+    #bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border: none;
     }
 
     header {
-      background-color: #003366;
-      color: white;
-      padding: 25px;
       text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: white;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #bbbbbb;
     }
 
     main {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
     }
 
-    .about {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    section {
+      background-color: var(--card-bg);
+      backdrop-filter: blur(10px);
+      padding: 25px 30px;
+      border-radius: 10px;
       margin-bottom: 30px;
+      border: 1px solid var(--border);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 1.3rem;
     }
 
     .button-grid {
@@ -39,50 +83,80 @@
     }
 
     .btn {
-      background: #007BFF;
-      color: white;
-      border: none;
-      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      font-size: 16px;
-      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: white;
+      padding: 16px;
+      height: 100px;
+      border-radius: 10px;
       text-decoration: none;
-      display: block;
-      transition: background 0.3s;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.4;
     }
 
     .btn:hover {
-      background: #0056b3;
+      background-color: var(--accent);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
 
+  <!-- Spline background -->
+  <iframe id="bg" src="https://my.spline.design/particlenebula-GCN6jWE7OPDIBXCm8BwoPeCF/" frameborder="0"></iframe>
+
   <header>
-    <h1>Web Technologies Lab Portal</h1>
-    <p>By ANTONIYA JENCY J - 27CSA</p>
+    <h1>Web Technologies Laboratory</h1>
+    <p>Root Homepage | Antoniyajency J - 311123104013</p>
   </header>
 
   <main>
-    <section class="about">
+    <section>
       <h2>About Me</h2>
-      <p>Hello! I'm Antoniyajency, a 2nd-year Computer Science Engineering student. This portal is part of my Web Technologies lab record, where I demonstrate my understanding of HTML, CSS, JavaScript, Servlets, JSP, XML, and more.</p>
-      
-      <h2>About the Lab</h2>
-      <p>This lab consists of 7 exercises, each focused on core web development concepts. The objective is to gain hands-on experience in creating web pages, working with styling, interactivity, server-side programming, and data presentation.</p>
+      <p>
+        I am Antoniyajency J, a 3rd-year Computer Science and Engineering student. This portal serves as the root entry point to my Web Technologies Laboratory record, showcasing the exercises and web concepts I’ve implemented.
+      </p>
     </section>
 
-    <div class="button-grid">
-      <!-- <a href="index.html" class="btn">Go to Exercise Home</a> -->
-      <a href="index.html" class="btn">Exercise 1: Image Map</a>
-      <a href="exercise2.html" class="btn">Exercise 2: CSS Types</a>
-      <a href="exercise3.html" class="btn">Exercise 3: Form Validation</a>
-      <a href="exercise4.html" class="btn">Exercise 4: Apache Tomcat</a>
-      <a href="exercise5.html" class="btn">Exercise 5: Servlets</a>
-      <a href="exercise6.html" class="btn">Exercise 6: JSP + DB</a>
-      <a href="exercise7.html" class="btn">Exercise 7: XML & XSLT</a>
-    </div>
+    <section>
+      <h2>About the Laboratory</h2>
+      <p>
+        This lab emphasizes practical understanding of web development using HTML, CSS, DHTML, Servlets, JSP, XML, and more. It covers both client-side and server-side components across 7 structured exercises.
+      </p>
+    </section>
+
+    <section>
+      <h2>Exercise Navigation</h2>
+      <div class="button-grid">
+        
+        <a href="index.html" class="btn">Exercise 1: HTML Image Map</a>
+        <a href="exercise2.html" class="btn">Exercise 2: CSS Types</a>
+        <a href="exercise3.html" class="btn">Exercise 3: Form Validation (DHTML)</a>
+        <a href="exercise4.html" class="btn">Exercise 4: Apache Tomcat Setup</a>
+        <a href="exercise5.html" class="btn">Exercise 5: Java Servlets</a>
+        <a href="exercise6.html" class="btn">Exercise 6: JSP with Database</a>
+        <a href="exercise7.html" class="btn">Exercise 7: XML, Schema, XSLT</a>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    &copy; 2025 Antoniyajency J | Department of CSE
+  </footer>
 
 </body>
 </html>
