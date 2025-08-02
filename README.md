@@ -22,9 +22,9 @@
 
 🎓 **Author:** Antoniyajency J  
 🎓 **Roll No:** 311123104013  
-📚 **Semester:** 5
+📚 **Semester:** 5<br>
 🏫 **Department:** CSE A<br>
-🌐 **Live Demo:** [Visit Site 🌐](https://your-username.github.io/your-repo-name/)
+🌐 **Live Demo:** [Visit Site 🌐](https://antoniyajency.github.io/Web-Technologies/)
 
 ---
 
@@ -32,13 +32,37 @@
 
 | Exercise | Title                                 | Page              |
 |----------|---------------------------------------|-------------------|
-| 1️⃣       | HTML Image Map                        | `index.html`      |
+| 1️⃣       | HTML Image Map                        | `root.html`      |
 | 2️⃣       | CSS Internal / External / Inline      | `exercise2.html`  |
 | 3️⃣       | Form Validation with DHTML           | `exercise3.html`  |
 | 4️⃣       | Apache Tomcat Setup                   | `exercise4.html`  |
 | 5️⃣       | Java Servlets                         | `exercise5.html`  |
 | 6️⃣       | JSP with JDBC                         | `exercise6.html`  |
 | 7️⃣       | XML, Schema & XSLT                    | `exercise7.html`  |
+
+
+
+---
+
+## 🧭 How to Explore the Output
+
+1. **Start at the animated homepage**  
+   You’ll land on a dark-themed homepage with a 3D animated background.
+
+2. **Read the introduction**  
+   Learn about the lab and the author through stylish info cards.
+
+3. **Use the navigation buttons**  
+   Click on each button to explore individual lab exercises interactively.
+
+4. **Discover the hourglass scene**  
+   Try clicking on the hourglass area to uncover a secret interaction.
+
+5. **Enjoy smooth transitions and layout**  
+   Experience modern UI effects and click on the appearing images to go into the time loop into the past.
+
+6. **Browse on any device**  
+   The portal works seamlessly on desktop, tablet, and mobile.
 
 
 ---
@@ -50,7 +74,7 @@
 - `Java Servlets` and `JSP`
 - `JDBC` for database access
 - `XML`, `Schema`, and `XSLT`
-- ✨ [Spline](https://spline.design) for 3D animated background
+- ✨ **Spline** for 3D animated background
 - 📦 Hosted via **GitHub Pages**
 
 ---
