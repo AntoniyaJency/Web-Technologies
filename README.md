@@ -20,7 +20,7 @@
 > combining elegant UI, a 3D animated background, and interactive navigation.  
 > Built with love, logic, and a little mystery.
 
-🎓 **Author:** Antoniyajency J  
+🎓 **Author:** Antoniya Jency J  
 🎓 **Roll No:** 311123104013  
 📚 **Semester:** 5<br>
 🏫 **Department:** CSE A<br>
