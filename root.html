@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>3D Homepage with Interactive Map</title>
+  <link rel="stylesheet" href="styles.css">
+
   <style>
     html, body {
       margin: 0;
@@ -82,5 +84,14 @@
     <area shape="poly" coords="295,58,678,766,680,55,291,770,556,413,414,418,292,218,67"
       href="scene.html" alt="hourglass" />
   </map>
+  <button id="backButton">Back</button>
+
+  <script>
+  const backButton = document.getElementById("backButton");
+  backButton.addEventListener("click", () => {
+    location.href = "index.html";
+  });
+  </script>
+
 </body>
 </html>
