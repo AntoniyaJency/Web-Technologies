@@ -25,7 +25,7 @@
   width: 100%;
   background: linear-gradient(90deg, #121212, #1e1e1e);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid #ff9900;
   z-index: 1000;
   padding: 15px 0px;
